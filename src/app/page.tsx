@@ -9,38 +9,49 @@ import ContactSection from "@/components/section/contact-section";
 import HackathonsSection from "@/components/section/hackathons-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
+import CertificationsSection from "@/components/section/certifications-section";
 import { ArrowUpRight } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
-    <main className="min-h-dvh flex flex-col gap-14 relative">
+    <main className="min-h-dvh flex flex-col gap-14 relative px-6 md:px-12">
+      
+      {/* HERO SECTION */}
       <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-8">
+        <div className="w-full space-y-8">
           <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between">
+            
+            {/* TEXT */}
             <div className="gap-2 flex flex-col order-2 md:order-1">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
+                className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-semibold tracking-tighter text-left"
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
               />
+
               <BlurFadeText
-                className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl"
+                className="text-muted-foreground md:text-xl lg:text-2xl text-left max-w-3xl"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
             </div>
+
+            {/* AVATAR */}
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
+
           </div>
         </div>
       </section>
+
+      {/* ABOUT */}
       <section id="about">
         <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 3}>
@@ -55,6 +66,8 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+
+      {/* WORK */}
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
@@ -65,6 +78,8 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+
+      {/* EDUCATION */}
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
@@ -113,6 +128,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      {/* SKILLS */}
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
@@ -130,21 +147,31 @@ export default function Page() {
           </div>
         </div>
       </section>
+
       <section id="projects">
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
           <ProjectsSection />
         </BlurFade>
       </section>
+
+      <section id="certifications">
+        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+          <CertificationsSection />
+        </BlurFade>
+      </section>
+
       <section id="hackathons">
         <BlurFade delay={BLUR_FADE_DELAY * 13}>
           <HackathonsSection />
         </BlurFade>
       </section>
+
       <section id="contact">
         <BlurFade delay={BLUR_FADE_DELAY * 16}>
           <ContactSection />
         </BlurFade>
       </section>
+
     </main>
   );
 }
