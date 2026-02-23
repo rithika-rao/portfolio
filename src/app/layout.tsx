@@ -27,21 +27,9 @@ export const metadata: Metadata = {
     template: `%s | ${DATA.name}`,
   },
   description: DATA.description,
-  openGraph: {
-    title: `${DATA.name}`,
-    description: DATA.description,
-    url: DATA.url,
-    siteName: `${DATA.name}`,
-    locale: "en_US",
-    type: "website",
-  },
   robots: {
     index: true,
     follow: true,
-  },
-  twitter: {
-    title: `${DATA.name}`,
-    card: "summary_large_image",
   },
 };
 
