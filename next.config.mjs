@@ -2,33 +2,13 @@ import { withContentCollections } from "@content-collections/next";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          {
-            key: "X-Content-Type-Options",
-            value: "nosniff",
-          },
-          {
-            key: "X-Frame-Options",
-            value: "DENY",
-          },
-          {
-            key: "Referrer-Policy",
-            value: "strict-origin-when-cross-origin",
-          },
-          {
-            key: "Permissions-Policy",
-            value: "camera=(), microphone=(), geolocation=()",
-          },
-        ],
-      },
-    ];
+  output: 'export',      // Forces a static build
+  images: {
+    unoptimized: true,   // Required because GitHub doesn't have an image server
   },
+  reactStrictMode: true,
+  // You must REMOVE or COMMENT OUT the 'async headers()' section. 
+  // Static exports (GitHub Pages) do not support custom headers in next.config.
 };
 
-// withContentCollections must be the outermost plugin
 export default withContentCollections(nextConfig);
