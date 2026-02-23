@@ -81,6 +81,12 @@ export const DATA = {
     { href: "https://rithika-rao.github.io/portfolio/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
+  home: {
+    name: "Home",
+    url: "https://rithika-rao.github.io/portfolio/",
+    icon:Icons.Home,
+    navbar: true,
+  },
   contact: {
     email: "rithikarao0414@gmail.com",
     tel: "+123456789",
