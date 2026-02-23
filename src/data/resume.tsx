@@ -89,7 +89,7 @@ export const DATA = {
   },
   Blog: {
     name: "Blog",
-    url: "/blog",
+    url: "https://medium.com/me/stories?tab=posts-published",
       icon: Icons.Notebook,
     navbar: true,
   },
