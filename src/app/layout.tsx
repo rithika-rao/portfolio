@@ -27,22 +27,9 @@ export const metadata: Metadata = {
     template: `%s | ${DATA.name}`,
   },
   description: DATA.description,
-  openGraph: {
-    title: `${DATA.name}`,
-    description: DATA.description,
-    url: DATA.url,
-    siteName: `${DATA.name}`,
-    locale: "en_US",
-    type: "website",
-    // REMOVED: images field that points to deleted files
-  },
   robots: {
     index: true,
     follow: true,
-  },
-  twitter: {
-    title: `${DATA.name}`,
-    card: "summary", // Changed from "summary_large_image" since you deleted the image
   },
 };
 
