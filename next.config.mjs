@@ -3,6 +3,7 @@ import { withContentCollections } from "@content-collections/next";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',      // Forces a static build
+  basePath: '/portfolio',
   images: {
     unoptimized: true,   // Required because GitHub doesn't have an image server
   },
