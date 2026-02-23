@@ -15,7 +15,7 @@ import { Csharp } from "@/components/ui/svgs/csharp";
 export const DATA = {
   name: "Rithika Patimedi",
   initials: "RP",
-  url: "https://github.com/rithika-rao/portfolio",
+  url: "https://rithika-rao.github.io/portfolio/",
   location: "Atlanta, GA",
   locationLink: "https://www.google.com/maps/place/Atlanta",
   description:
@@ -87,7 +87,7 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/rithika-rao",
+        url: "https://rithika-rao.github.io/portfolio/",
         icon: Icons.github,
         navbar: true,
       },
