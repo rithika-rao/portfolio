@@ -87,6 +87,12 @@ export const DATA = {
     icon:Icons.Home,
     navbar: true,
   },
+  Blog: {
+    name: "Blog",
+    url: "/blog",
+      icon: Icons.Notebook,
+    navbar: true,
+  },
   contact: {
     email: "rithikarao0414@gmail.com",
     tel: "+123456789",
