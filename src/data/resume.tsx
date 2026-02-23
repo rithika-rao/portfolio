@@ -78,7 +78,7 @@ export const DATA = {
     { name: "Presentation Skills" },
   ],
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "https://rithika-rao.github.io/portfolio/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
@@ -87,7 +87,7 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://rithika-rao.github.io/portfolio/",
+        url: "https://github.com/rithika-rao",
         icon: Icons.github,
         navbar: true,
       },
