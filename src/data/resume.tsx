@@ -22,7 +22,7 @@ export const DATA = {
     "A curious mind in cybersecurity, driven to protect what matters and constantly grow along the way",
   summary:
     "I began my journey in IT infrastructure, working hands-on with Windows Server environments and enterprise systems, where I built a strong understanding of how technology operates at scale. That experience sparked a deeper curiosity about cybersecurity not just how systems run, but how they’re protected. I’m currently pursuing a Master’s in Information Technology with a concentration in Cybersecurity, continuously strengthening my skills and growing into a professional focused on securing what others rely on every day. ",
-  avatarUrl: "/Me.jpeg",
+  avatarUrl: "/portfolio/Me.jpeg",
   skills: [
     { name: "Python" },
     { name: "Bash" },
@@ -128,7 +128,7 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "Graduate Research Assistant",
-      logoUrl: "/KSUlogo.jpg",
+      logoUrl: "/portfolio/KSUlogo.jpg",
       start: "January 2026",
       end: "May 2026",
       description:
@@ -140,7 +140,7 @@ export const DATA = {
       href: "https://www.hcltech.com/",
       location: "Remote",
       title: "Windows System Administrator",
-      logoUrl: "/HCLlogo.webp",
+      logoUrl: "/portfolio/HCLlogo.webp",
       start: "September 2022",
       end: "June 2024",
       description:
@@ -152,7 +152,7 @@ export const DATA = {
       school: "Kennesaw State University",
       href: "https://www.kennesaw.edu/",
       degree: "Master's in Information Technology",
-      logoUrl: "/KSUlogo.jpg",
+      logoUrl: "/portfolio/KSUlogo.jpg",
       start: "2024",
       end: "2026",
     },
@@ -160,7 +160,7 @@ export const DATA = {
       school: "JB Institute of Engineering & Technology (JBIET)",
       href: "https://www.jbiet.edu.in/",
       degree: "Bachelor's Degree of Electronics and Communication Engineering",
-      logoUrl: "/JBIETlogo.jpg",
+      logoUrl: "/portfolio/JBIETlogo.jpg",
       start: "2018",
       end: "2022",
     }
